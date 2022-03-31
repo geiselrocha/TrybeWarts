@@ -3,7 +3,27 @@
     margin: 0;
 }
 
+img {
+    padding: 10px;
+    padding-left: 30px;
+}
+
+main {
+    /* display: flex; */
+    
+}
+
 .header {
     display: flex;
-    background-color: rgb(50, 167, 145)
+    background-color: rgb(50, 167, 145);
+    justify-content: space-between; /* vai funcionar quando o item 3 estiver feito*/
+}
+
+#trybewarts-header-title {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    
+    
 }
