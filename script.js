@@ -11,18 +11,28 @@ function firstForm() {
 }
 buttonSubmit.addEventListener('click', firstForm);
 
-
-//*função que desabilita o botão inicialmente e habilita após o checkbox
-let check = document.querySelector('#agreement');
-let button = document.querySelector('#submit-btn');
+// função que desabilita o botão inicialmente e habilita após o checkbox
+const check = document.querySelector('#agreement');
+const button = document.querySelector('#submit-btn');
 button.disabled = true;
 
-check.addEventListener('change', stateHandle);
 function stateHandle() {
-
   if (check.value === true) {
     button.disabled = true;
   } else {
     button.disabled = false;
   }
 }
+check.addEventListener('change', stateHandle);
+
+// contador com o ID counter contendo o número de caracteres disponíveis no textarea, variando de 500 até 0
+
+const counterTextArea = document.getElementById('counter');
+const typingTextArea = document.getElementById('textarea');
+counterTextArea.innerText = 500;
+
+function counterTyping() {
+  const text = typingTextArea.value.length;
+  counterTextArea.innerText = 500 - text;
+}
+typingTextArea.addEventListener('typing', counterTyping);

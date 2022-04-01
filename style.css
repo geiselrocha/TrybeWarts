@@ -9,7 +9,7 @@ img {
 }
 
 main , form {
-  display: flex;    
+  display: flex;
 }
 
 .header {
@@ -33,6 +33,7 @@ main , form {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
 #evaluation-form {
   display: flex;
   flex-basis: 675px;
@@ -71,4 +72,3 @@ div {
   display: flex;
   flex-direction: row;
 }
-
