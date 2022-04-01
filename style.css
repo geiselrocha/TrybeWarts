@@ -8,15 +8,14 @@ img {
   padding-left: 30px;
 }
 
-main, form{
-    display: flex;
-    
+main , form {
+  display: flex;    
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between; /* vai funcionar quando o item 3 estiver feito*/
+  justify-content: space-between;
 }
 
 #trybewarts-header-title {
@@ -24,9 +23,6 @@ main, form{
   justify-content: space-between;
   color: white;
   align-items: center;
-    
-    
-  display: flex;
   background-color: rgb(50, 167, 145);
 }
 
@@ -41,17 +37,7 @@ main, form{
   display: flex;
   flex-basis: 675px;
   flex-direction: column;
-  /* width: 50%; */
   width: 657px;
-  
-}
-
-#input-name, #input-lastname {
-  /* display: flex;
-  display: inline-block; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: row; */
-  /* width: 200px; */
 }
 
 div {
@@ -60,7 +46,6 @@ div {
 
 .family {
   flex-direction: column;
-  ;
 }
 
 .checkbox {
@@ -74,10 +59,8 @@ div {
 
 #label-rate {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
 }
-
 
 .rate {
   display: flex;
