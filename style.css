@@ -46,6 +46,13 @@ main, form{
   
 }
 
+#input-name, #input-lastname {
+  /* display: flex;
+  display: inline-block; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* width: 200px; */
+}
 
 div {
   display: flex;
