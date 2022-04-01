@@ -8,7 +8,7 @@ img {
     padding-left: 30px;
 }
 
-main {
+main, form{
     display: flex;
     
 }
@@ -32,4 +32,11 @@ main {
 
 .trybewarts-login {
   display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-basis: 675px;
+  flex-direction: column;
+  
 }
