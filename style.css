@@ -8,8 +8,13 @@ img {
   padding-left: 30px;
 }
 
+<<<<<<< HEAD
 main {
   display: flex;
+=======
+main, form{
+    display: flex;
+>>>>>>> fcf0cdbeae490c83d786c5344d98c4381490fd77
     
 }
 
@@ -34,6 +39,15 @@ main {
   display: flex;
 }
 
+<<<<<<< HEAD
 #trybewarts-forms-logo {
   height: 500px;
 }
+=======
+#evaluation-form {
+  display: flex;
+  flex-basis: 675px;
+  flex-direction: column;
+  
+}
+>>>>>>> fcf0cdbeae490c83d786c5344d98c4381490fd77
