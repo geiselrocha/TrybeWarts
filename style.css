@@ -8,13 +8,8 @@ img {
   padding-left: 30px;
 }
 
-<<<<<<< HEAD
-main {
-  display: flex;
-=======
 main, form{
     display: flex;
->>>>>>> fcf0cdbeae490c83d786c5344d98c4381490fd77
     
 }
 
@@ -39,15 +34,51 @@ main, form{
   display: flex;
 }
 
-<<<<<<< HEAD
 #trybewarts-forms-logo {
   height: 500px;
 }
-=======
 #evaluation-form {
   display: flex;
   flex-basis: 675px;
   flex-direction: column;
+  /* width: 50%; */
+  width: 657px;
   
 }
->>>>>>> fcf0cdbeae490c83d786c5344d98c4381490fd77
+
+
+div {
+  display: flex;
+}
+
+.family {
+  flex-direction: column;
+  ;
+}
+
+.checkbox {
+  flex-direction: column;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-rate {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+
+.rate {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.agreement {
+  display: flex;
+  flex-direction: row;
+}
+
