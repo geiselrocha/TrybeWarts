@@ -10,17 +10,22 @@ img {
 
 <<<<<<< HEAD
 main {
+<<<<<<< Updated upstream
   display: flex;
 =======
 main, form{
     display: flex;
 >>>>>>> fcf0cdbeae490c83d786c5344d98c4381490fd77
     
+=======
+    display: flex;
+>>>>>>> Stashed changes
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+<<<<<<< Updated upstream
   justify-content: space-between; /* vai funcionar quando o item 3 estiver feito*/
 }
 
@@ -31,7 +36,18 @@ main, form{
   align-items: center;
     
     
+=======
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#trybewarts-header-title {
+>>>>>>> Stashed changes
   display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
   background-color: rgb(50, 167, 145);
 }
 
@@ -39,6 +55,7 @@ main, form{
   display: flex;
 }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 #trybewarts-forms-logo {
   height: 500px;
@@ -51,3 +68,12 @@ main, form{
   
 }
 >>>>>>> fcf0cdbeae490c83d786c5344d98c4381490fd77
+=======
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  margin: 30px 50px;
+  
+}
+>>>>>>> Stashed changes
