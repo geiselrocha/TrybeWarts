@@ -32,10 +32,10 @@ const typingTextArea = document.getElementById('textarea');
 counterTextArea.innerText = 500;
 
 function counterTyping() {
-  const text = typingTextArea.value.length;
-  counterTextArea.innerText = 500 - text;
+  const textField = typingTextArea.value.length;
+  counterTextArea.innerText = 500 - textField;
 }
-typingTextArea.addEventListener('typing', counterTyping);
+typingTextArea.addEventListener('keyup', counterTyping);
 
 // ao clicar no botao enviar, alterar o conteudo do form para os itens preenchidos
 
@@ -46,7 +46,7 @@ function enviar() {
   btn.addEventListener('click', changeText);
 }
 
-function changeText (event) {
+function changeText(event) {
   const altera = event.target;
   if (altera === true) {
     tagForm.innerText = '';
