@@ -37,19 +37,13 @@ function counterTyping() {
 }
 typingTextArea.addEventListener('typing', counterTyping);
 
-// ao clicar no botao enviar, alterar o conteudo do form para os itens preenchidos
+// exercicio 21 -  ao clicar no botao enviar, alterar o conteudo do form para os itens preenchidos
 
-const tagForm = document.getElementsByTagName('form');
-const btn = document.getElementById('submit-btn');
-
-function enviar() {
-  btn.addEventListener('click', changeText);
+function remove(event) {
+  const toBeRemoved = document.getElementById('evaluation-form');
+  const button = document.getElementById('submit-btn');
+  button.addEventListener('click', function () {
+    toBeRemoved.removeChild(event);
+  });
+  
 }
-
-function changeText (event) {
-  const altera = event.target;
-  if (altera === true) {
-    tagForm.innerText = '';
-    console.log('testando');
-  }
-} enviar();
