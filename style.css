@@ -1,74 +1,74 @@
 * {
   padding: 0;
   margin: 0;
-  }
+}
   
-  img {
+img {
   padding: 10px;
   padding-left: 30px;
-  }
+}
   
-  main , form {
+main , form {
   display: flex;
-  }
+}
   
-  .header {
+.header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  }
+}
   
-  #trybewarts-header-title {
+#trybewarts-header-title {
   display: flex;
   justify-content: space-between;
   color: white;
   align-items: center;
   background-color: rgb(50, 167, 145);
-  }
+}
   
-  .trybewarts-login {
+.trybewarts-login {
   display: flex;
-  }
+}
   
-  #trybewarts-forms-logo {
+#trybewarts-forms-logo {
   height: 500px;
-  }
+}
   
-  #evaluation-form {
+#evaluation-form {
   display: flex;
   flex-basis: 675px;
   flex-direction: column;
   width: 657px;
-  }
+}
   
-  div {
+div {
   display: flex;
-  }
+}
   
-  .family {
+.family {
   flex-direction: column;
-  }
+}
   
-  .checkbox {
+.checkbox {
   flex-direction: column;
-  }
+}
   
-  .textarea {
+.textarea {
   display: flex;
   flex-direction: column;
-  }
+}
   
-  #label-rate {
+#label-rate {
   display: flex;
   flex-wrap: wrap;
-  }
+}
   
-  .rate {
+.rate {
   display: flex;
   flex-wrap: wrap;
-  }
-  
-  .agreement {
+}
+
+.agreement {
   display: flex;
   flex-direction: row;
-  }
+}

@@ -36,12 +36,3 @@ function counterTyping() {
   counterTextArea.innerText = 500 - text;
 }
 typingTextArea.addEventListener('typing', counterTyping);
-
-
-
-
-
-
-
-
-
