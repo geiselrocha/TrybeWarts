@@ -32,10 +32,10 @@ const typingTextArea = document.getElementById('textarea');
 counterTextArea.innerText = 500;
 
 function counterTyping() {
-  const text = typingTextArea.value.length;
-  counterTextArea.innerText = 500 - text;
+  const textField = typingTextArea.value.length;
+  counterTextArea.innerText = 500 - textField;
 }
-typingTextArea.addEventListener('typing', counterTyping);
+typingTextArea.addEventListener('keyup', counterTyping);
 
 // exercicio 21 -  ao clicar no botao enviar, alterar o conteudo do form para os itens preenchidos
 
@@ -47,3 +47,14 @@ function remove(event) {
   });
   
 }
+<<<<<<< HEAD
+=======
+
+function changeText(event) {
+  const altera = event.target;
+  if (altera === true) {
+    tagForm.innerText = '';
+    console.log('testando');
+  }
+} enviar();
+>>>>>>> 85d73c1ed3a36f53d11cf076a9d17d92d4331df1
