@@ -45,7 +45,6 @@ typingTextArea.addEventListener('keyup', counterTyping);
 //   button.addEventListener('click', function () {
 //     toBeRemoved.removeChild(event);
 //   });
-  
 // }
 
 // function changeText(event) {
