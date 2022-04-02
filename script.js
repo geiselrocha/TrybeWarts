@@ -35,4 +35,8 @@ function counterTyping() {
   const text = typingTextArea.value.length;
   counterTextArea.innerText = 500 - text;
 }
+<<<<<<< HEAD
 typingTextArea.addEventListener('typing', counterTyping);
+=======
+typingTextArea.addEventListener('typing', counterTyping);
+>>>>>>> 216ccdb5f9b371ee3ebd6564a50b0ac295adba91
