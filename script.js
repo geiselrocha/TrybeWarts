@@ -38,3 +38,5 @@ function counterTyping() {
 typingTextArea.addEventListener('keyup', counterTyping);
 
 // exercicio 21 -  ao clicar no botao enviar, alterar o conteudo do form para os itens preenchidos
+
+
