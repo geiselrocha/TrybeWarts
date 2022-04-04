@@ -42,14 +42,14 @@ typingTextArea.addEventListener('keyup', counterTyping);
 const tagForm = document.getElementsByTagName('form');
 const btn = document.getElementById('submit-btn');
 
-function enviar() {
-  btn.addEventListener('click', changeText);
-}
-
 function changeText(event) {
   const altera = event.target;
   if (altera === true) {
     tagForm.innerText = '';
     console.log('testando');
   }
-} enviar();
+}
+function enviar() {
+  btn.addEventListener('click', changeText);
+}
+enviar();
