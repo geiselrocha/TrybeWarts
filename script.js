@@ -43,15 +43,15 @@ const delCont = document.getElementById('submit-btn');
 delCont.addEventListener('click', changeValue);
 const form = document.getElementById('evaluation-form');
 
-function changeValue () {
-  const name = document.getElementById('input-name');//ok
-  const email = document.getElementById('input-email');//ok
-  const lastName = document.getElementById('input-lastname');//ok
+function changeValue() {
+  const name = document.getElementById('input-name');
+  const email = document.getElementById('input-email');
+  const lastName = document.getElementById('input-lastname');
   const casa = document.getElementById('house');
   const observacoes = document.getElementById('textarea');
 
   const familia = document.getElementsByClassName('fam');
-  let selecionado = 0
+  let selecionado = 0;
   for (let index = 0; index < familia.length; index += 1) {
     if (familia[index].checked) {
       selecionado = familia[index];
@@ -59,32 +59,28 @@ function changeValue () {
   }
 
   const materiais = document.getElementsByClassName('subject');
-  let materials = [];  
+  const materials = [];
   for (let index = 0; index < materiais.length; index += 1) {
     if (materiais[index].checked) {
-      materials.push(' ' + materiais[index].value);      
-    } //console.log(materiais[index].checked);
-  } // colocar em um array os valores selecionados
-
-
-const avaliacao = document.getElementsByClassName('avaliacao');
-let checado = 0
-for (let index = 0; index < avaliacao.length; index += 1) {
-  if (avaliacao[index].checked) {
-    checado = avaliacao[index];
+      materials.push(' ' + materiais[index].value);
+    }
   }
-}
+
+  const avaliacao = document.getElementsByClassName('avaliacao');
+  let checado = 0;
+  for (let index = 0; index < avaliacao.length; index += 1) {
+    if (avaliacao[index].checked) {
+      checado = avaliacao[index];
+    }
+  }
 
   form.innerHTML = '';
-  form.innerText = 
-  `Nome: ${name.value} ${lastName.value}
+  form.innerText =
+    `Nome: ${name.value} ${lastName.value}
   Email: ${email.value}
   Casa: ${casa.value} Escolhida
   Família: ${selecionado.value} Escolhida
   Matérias: ${materials}
   Avaliação: ${checado.value}
-  Observações: ${observacoes.value}`;  
-}
-
-
- 
+    Observações: ${observacoes.value}`;
+} 
