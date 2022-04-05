@@ -58,23 +58,25 @@ function changeValue() {
     if (familia[index].checked) {
       selecionado = familia[index];
     }
-  }  
+  }
+}
 
+function test() {
   for (let index = 0; index < avaliacao.length; index += 1) {
     if (avaliacao[index].checked) {
       checado = avaliacao[index];
     }
-  } 
+  }
 }
 
 function mat() {
-for (let index = 0; index < materiais.length; index += 1) {
-  if (materiais[index].checked) {
-    materials.push(' ' + materiais[index].value); //aplicar template literals
+  for (let index = 0; index < materiais.length; index += 1) {
+    if (materiais[index].checked) {
+      materials.push(' ' + materiais[index].value); // aplicar template literals
+    }
   }
-}
-form.innerHTML = '';
-form.innerText = `
+  form.innerHTML = '';
+  form.innerText = `
 Nome: ${name.value} ${lastName.value}
 Email: ${email.value}
 Casa: ${casa.value} Escolhida
@@ -85,4 +87,5 @@ Observações: ${observacoes.value}`;
 }
 
 delCont.addEventListener('click', changeValue);
+delCont.addEventListener('click', test);
 delCont.addEventListener('click', mat);
