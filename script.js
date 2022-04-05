@@ -53,34 +53,36 @@ const materials = []; // materiais
 const avaliacao = document.getElementsByClassName('avaliacao'); // avaliacao
 let checado = 0; // avaliacao
 
-function changeValue() {  
+function changeValue() {
   for (let index = 0; index < familia.length; index += 1) {
     if (familia[index].checked) {
       selecionado = familia[index];
     }
-  }
-  
-  for (let index = 0; index < materiais.length; index += 1) {
-    if (materiais[index].checked) {
-      materials.push(' ' + materiais[index].value); //aplicar template literals
-    }
-  }
+  }  
 
   for (let index = 0; index < avaliacao.length; index += 1) {
     if (avaliacao[index].checked) {
       checado = avaliacao[index];
     }
+  } 
+}
+
+function mat() {
+for (let index = 0; index < materiais.length; index += 1) {
+  if (materiais[index].checked) {
+    materials.push(' ' + materiais[index].value); //aplicar template literals
   }
-  
-  form.innerHTML = '';
-  form.innerText = `
-  Nome: ${name.value} ${lastName.value}
-  Email: ${email.value}
-  Casa: ${casa.value} Escolhida
-  Família: ${selecionado.value} Escolhida
-  Matérias: ${materials}
-  Avaliação: ${checado.value}
-  Observações: ${observacoes.value}`;
+}
+form.innerHTML = '';
+form.innerText = `
+Nome: ${name.value} ${lastName.value}
+Email: ${email.value}
+Casa: ${casa.value} Escolhida
+Família: ${selecionado.value} Escolhida
+Matérias: ${materials}
+Avaliação: ${checado.value}
+Observações: ${observacoes.value}`;
 }
 
 delCont.addEventListener('click', changeValue);
+delCont.addEventListener('click', mat);
