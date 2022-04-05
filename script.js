@@ -47,29 +47,44 @@ function changeValue () {
   const name = document.getElementById('input-name');//ok
   const email = document.getElementById('input-email');//ok
   const lastName = document.getElementById('input-lastname');//ok
-  const casa = document.getElementById('house');//ok
-  const familia = document.getElementById('label-family'); //! nào recebe
-  // const materias = document.getElementById('label-content') //! nào recebe
-  const avaliacao = document.getElementById('label-rate'); //! nào recebe
-  const observacoes = document.getElementById('textarea'); //ok 
+  const casa = document.getElementById('house');
+  const observacoes = document.getElementById('textarea');
+
+  const familia = document.getElementsByClassName('fam');
+  let selecionado = 0
+  for (let index = 0; index < familia.length; index += 1) {
+    if (familia[index].checked) {
+      selecionado = familia[index];
+    }
+  }
+
+  const materiais = document.getElementsByClassName('subject');
+  let materials = [];  
+  for (let index = 0; index < materiais.length; index += 1) {
+    if (materiais[index].checked) {
+      materials.push(' ' + materiais[index].value);      
+    } //console.log(materiais[index].checked);
+  } // colocar em um array os valores selecionados
+
+
+const avaliacao = document.getElementsByClassName('avaliacao');
+let checado = 0
+for (let index = 0; index < avaliacao.length; index += 1) {
+  if (avaliacao[index].checked) {
+    checado = avaliacao[index];
+  }
+}
 
   form.innerHTML = '';
   form.innerText = 
   `Nome: ${name.value} ${lastName.value}
   Email: ${email.value}
   Casa: ${casa.value} Escolhida
-  Família: ${familia.value} Escolhida
+  Família: ${selecionado.value} Escolhida
   Matérias: ${materials}
-  Avaliação: ${avaliacao.value}
+  Avaliação: ${checado.value}
   Observações: ${observacoes.value}`;  
 }
 
-const materiais = document.getElementsByClassName('subject');
-let materials = 0;
-  
-  for (let index = 0; index < materiais.length; index += 1) {
-    if (materials[index].checked) {
-      materials = materiais[index];
-    }
-  } 
+
  
