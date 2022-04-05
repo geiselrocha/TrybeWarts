@@ -72,7 +72,7 @@ function test() {
 function mat() {
   for (let index = 0; index < materiais.length; index += 1) {
     if (materiais[index].checked) {
-      materials.push(' ' + materiais[index].value); // aplicar template literals
+      materials.push(` ${materiais[index].value}`); // aplicar template literals
     }
   }
   form.innerHTML = '';
