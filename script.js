@@ -37,20 +37,55 @@ function counterTyping() {
 }
 typingTextArea.addEventListener('keyup', counterTyping);
 
-// ao clicar no botao enviar, alterar o conteudo do form para os itens preenchidos
+// exercicio 21 -  ao clicar no botao enviar, alterar o conteudo do form para os itens preenchidos
 
-const tagForm = document.getElementsByTagName('form');
-const btn = document.getElementById('submit-btn');
+const delCont = document.getElementById('submit-btn');
+const form = document.getElementById('evaluation-form');
+const name = document.getElementById('input-name');
+const email = document.getElementById('input-email');
+const lastName = document.getElementById('input-lastname');
+const casa = document.getElementById('house');
+const observacoes = document.getElementById('textarea');
+const familia = document.getElementsByClassName('fam'); // familia
+let selecionado = 0; // familia
+const materiais = document.getElementsByClassName('subject'); // materiais
+const materials = []; // materiais
+const avaliacao = document.getElementsByClassName('avaliacao'); // avaliacao
+let checado = 0; // avaliacao
 
-function changeText(event) {
-  const altera = event.target;
-  if (altera === true) {
-    tagForm.innerText = '';
-    console.log('testando');
+function changeValue() {
+  for (let index = 0; index < familia.length; index += 1) {
+    if (familia[index].checked) {
+      selecionado = familia[index];
+    }
   }
 }
 
-function enviar() {
-  btn.addEventListener('click', changeText);
+function test() {
+  for (let index = 0; index < avaliacao.length; index += 1) {
+    if (avaliacao[index].checked) {
+      checado = avaliacao[index];
+    }
+  }
 }
-enviar();
+
+function mat() {
+  for (let index = 0; index < materiais.length; index += 1) {
+    if (materiais[index].checked) {
+      materials.push(` ${materiais[index].value}`); // aplicar template literals
+    }
+  }
+  form.innerHTML = '';
+  form.innerText = `
+Nome: ${name.value} ${lastName.value}
+Email: ${email.value}
+Casa: ${casa.value} Escolhida
+Família: ${selecionado.value} Escolhida
+Matérias: ${materials}
+Avaliação: ${checado.value}
+Observações: ${observacoes.value}`;
+}
+
+delCont.addEventListener('click', changeValue);
+delCont.addEventListener('click', test);
+delCont.addEventListener('click', mat);
